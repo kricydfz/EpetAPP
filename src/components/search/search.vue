@@ -66,8 +66,6 @@
         bottom: 0
         margin: auto 0
         background-position: 0 0
-
-
     a
       float left
       img
@@ -78,15 +76,7 @@
 
 
 
-   /* .serach-ico
-      width 11px
-      height 11px
-      position absolute
-      right 5px
-      top 0
-      bottom 0
-      margin auto 0
-      background-position 0 0*/
+
 
 
 

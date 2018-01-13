@@ -1,5 +1,6 @@
 <template>
     <div>
+      <router-view />
       <div class="footGuide">
         <ul class="foot_item">
           <li @click.stop="refreshIndex()">
@@ -33,13 +34,7 @@
             <br>
             <span>购物车</span>
           </li>
-         <!-- <li>
 
-            <router-link to="/shopCart">
-              <svgImage className="icon" type="#icon-gouwuche"></svgImage>
-              <br> 购物车
-            </router-link>
-          </li>-->
           <li @click.stop="gotoAddress('/myPet')">
             <span v-if="$route.path.indexOf('/myPet') !== -1">
                 <svgImage className="icon_style" type="#icon-wodedangxuan1-copy"/>
@@ -50,16 +45,10 @@
             <br>
             <span>我的E宠</span>
           </li>
-         <!-- <li>
 
-            <router-link to="myPet">
-              <svgImage className="icon" type="#icon-wodedangxuan"></svgImage>
-              <br>我的E宠
-              </router-link>
-          </li>-->
         </ul>
        </div>
-      <router-view></router-view>
+
     </div>
 </template>
 <script>
@@ -81,7 +70,8 @@
 </script>
 <style lang="stylus" rel="stylesheet/stylus">
 .footGuide
-  position absolute
+  z-index 1
+  position fixed
   left 0
   bottom 0
   /*height 45px*/
@@ -93,7 +83,10 @@
       float left
       text-align center
       &>span
-        .icon
+        &>.icon
+          width 30px
+          height 30px
+        &>.icon_style
           width 30px
           height 30px
    /* a

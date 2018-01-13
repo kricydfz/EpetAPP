@@ -12,13 +12,53 @@ module.exports = {
     assetsPublicPath: '/',
     proxyTable: {
       '/api': {
-        target: 'https://mallcdn.api.epet.com/v3/index/main.html?pet_type=dog&version=358&is_single=0&system=wap&isWeb=1&_=1515062760841',
+        target: 'https://mallcdn.api.epet.com/v3/index/main.html?pet_type=dog&version=358&is_single=0&system=wap&isWeb=1&_=1515153168660',
 
         changeOrigin: true,
         pathRewrite: {
           '^/api': '/'
         }
-      }
+      },
+      '/test': {
+        target: 'http://mall.api.epet.com/v3/index/main.html?do=GetDynamicV315&pet_type=dog&version=358&system=wap&isWeb=1&_=1515173008616',
+        changeOrigin: true,
+        pathRewrite: {
+          '^/test': '/'
+        }
+      },
+      '/menuL': {
+        target: 'https://mallcdn.api.epet.com/v3/goods/category/main.html?pet_type=dog&system=wap&isWeb=1&version=303&_=1515241077976',
+        changeOrigin: true,
+        pathRewrite: {
+          '^/menuL': '/'
+        }
+      },
+      '/brands': {
+        target: 'https://mallcdn.api.epet.com/v3/brand/list/main.html?pet_type=dog&system=wap&isWeb=1&version=303&_=1515291994806',
+        changeOrigin: true,
+        pathRewrite: {
+          '^/brands': '/'
+        }
+
+      },
+
+      '/pet': {
+        target: 'https://mallcdn.api.epet.com/v3/goods/category/main.html',
+        changeOrigin: true,
+        pathRewrite: {
+          '^/pet': '/'
+        }
+
+      },
+      '/login': {
+        target: 'http://localhost:3000',
+        changeOrigin: true,
+        pathRewrite: {
+          '^/login': '/'
+        }
+
+      },
+
     },
 
     // Various Dev Server settings

@@ -31,6 +31,7 @@ footer, header, menu, nav, section {
 
 body {
   line-height: 1;
+  font-size: 14px;
 }
 
 blockquote, q {
@@ -52,6 +53,7 @@ a {
   color: #7e8c8d;
   text-decoration: none;
   -webkit-backface-visibility: hidden;
+
 }
 
 li {
@@ -88,7 +90,13 @@ body {
   -webkit-text-size-adjust: none;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
-html,body{
+ html,body{
   height: 100%;
   overflow: hidden;
 }
+ *{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+ }
+

@@ -1,0 +1,5 @@
+export const RECEIVE_HOME='receive_home'
+export const RECEIVE_HOMEB='receive_homeb'
+export const RECEIVE_MENUL='receive_menul'
+export const RECEIVE_BRANDS='receive_brands'
+export const RECEIVE_PET='receive_pet'

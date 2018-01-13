@@ -1,11 +1,18 @@
 <template>
     <div>
-    myPet组件。。。
+      <!--//<own/>-->
+      <router-view/>
     </div>
 </template>
 <script>
-  export default{}
+  import own from '../own/own.vue'
+  export default{
+    components:{
+      own
+    }
+  }
 </script>
 <style lang="stylus" rel="stylesheet/stylus">
+
 
 </style>
